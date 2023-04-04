@@ -1,0 +1,107 @@
+$page-width: 1000px;
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fasthand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  font-family: 'Ubuntu', sans-serif;  
+  line-height: 1.5;
+    font-weight: 400;
+  
+    color-scheme: light dark;
+    color: rgba(56, 56, 56, 0.87);
+    background-color: #f3f3f3;
+  
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+  }
+  
+  a {
+    font-weight: 500;
+    color: #646cff;
+    text-decoration: inherit;
+  }
+  a:hover {
+    color: #535bf2;
+  }
+  
+  body {
+    min-height: 100vh;
+  }
+  
+  h1 {
+    font-size: 4.2em;
+    line-height: 1.1;
+    font-family: 'Fasthand', cursive;
+    color: black;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  h2{
+    color:rgb(77, 77, 77);
+    line-height: 1.2;
+    letter-spacing: 0.8px;
+  }
+  h2, h3,h4{
+    // font-family: 'Roboto-Serif', serif;
+    font-weight: 700;
+    color:#3a3a3a;
+  }
+  p{
+    font-size: 18px;
+  }
+  .page{
+    max-width: $page-width;
+    margin: 0 auto;
+  
+  }
+  .cover-image-container{
+   
+    margin: 0 auto;
+
+  }
+  .cover-image{
+    max-width: $page-width;
+    width:100%;
+    height: auto;
+    display:block;
+    margin: 0 auto;
+    
+    }
+  .post-grid{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .post-card{
+    background-color: white;
+    margin: 20px;
+    padding: 10px 20px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  }
+
+  .pagination-container{
+    width: 100%;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+  }
+  .pagination-button{
+   padding: 5px 10px; 
+   border-radius: 3px;
+   font-size: 20px;
+   outline:none;
+   border: none;
+   margin: 10px;
+   background-color: rgb(118, 118, 240);
+   color:rgb(241, 241, 241);
+  }
+  .pagination-button:hover{
+    background-color:rgb(80, 80, 161)
+  }
