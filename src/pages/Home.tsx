@@ -18,7 +18,7 @@ function Home() {
   // const { loading, error, data } = useFetch('http://localhost:1337/api/posts?populate=cover')
 
    const [page, setPage] = useState(1) 
-   const pageSize = 6
+   const pageSize:number = 6
 
   const { loading, error, data, pagination} = useFetchAllPosts(page, pageSize);
   
@@ -31,10 +31,8 @@ function Home() {
 
   if (loading) return <p>Loading...</p>
   if (error) return <p>Error :(</p>
-  if(data) return (
-<>
-
-  
+  return (
+<>  
 <div className="post-grid">  
      {data.map((post:SinglePost) => (
           

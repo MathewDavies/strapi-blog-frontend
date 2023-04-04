@@ -14,15 +14,17 @@ interface SinglePost {
 type Data= [SinglePost]
 
 
+
 function Categories() {
-  const {id} = useParams();
-  const { loading, error, data, categoryData} = useFetchCategoryPosts(id);
-  if(data)console.log(categoryData)
+  const {id} = useParams() as {id: string};
+  
+  const { loading, error, data, categoryData} = useFetchCategoryPosts(parseInt(id, 10));
+ 
 
 
   if (loading) return <p>Loading...</p>
   if (error) return <p>Error :(</p>
-  if(data) return (
+  return (
   <>  
     <h2 className="category-title">{categoryData.name}</h2>
     <h3 className='category-description'>{categoryData.description}</h3>

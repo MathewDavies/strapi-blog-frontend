@@ -3,7 +3,7 @@ import {useQuery, gql} from '@apollo/client'
 type Entry= {   
       id: number,
       attributes: {
-        Name: string,
+        name: string,
          description:string
       }
 }

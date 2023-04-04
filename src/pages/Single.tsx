@@ -4,12 +4,12 @@ import useFetchSinglePost from '../hooks/usefetchSinglePost';
 
 
 function Single() {
-  const {id} = useParams();
-  const { data, loading, error} = useFetchSinglePost(id)
+  const {id} = useParams() as {id: string};
+  const { data, loading, error} = useFetchSinglePost(parseInt(id, 10))
   if (loading) return <p>Loading...</p>
   if (error) return <p>Error :(</p>
   
-  if(data)return (
+  return (
     <div>    
         <div className="review-card">
           <h2>{data.title}</h2> 

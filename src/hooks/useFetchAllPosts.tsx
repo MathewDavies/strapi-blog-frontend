@@ -52,7 +52,7 @@ image: string,
 article:string
 }
 
-function useFetchAllPosts (page, pageSize) {
+function useFetchAllPosts (page:number, pageSize:number) {
 
 
     let { loading, error, data} = useQuery(POSTS,  {

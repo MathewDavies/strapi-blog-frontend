@@ -10,10 +10,7 @@ interface Category {
 function NavBar() {
   const {data, loading, error} = useFetchCategoryList()
   
-
-
-
-  if(data)return (
+  return (
     <nav> 
       <NavLink className={({isActive}) =>(isActive ? "link nav-link-active": "link")} to="/" end><h1>Travel Tales Blog</h1></NavLink>
       <div>

@@ -71,20 +71,20 @@ type CategoryData = {
 function useFetchCategoryPosts (id:number) {
   let { loading, error, data} = useQuery(POSTS, {
     variables: {id:id}
-})
+  })
   
     let newDataArray:Array<ReformattedEntry> = [];
-    let categoryData:CategoryData
+    let categoryData:CategoryData = {
+      name: "error",
+      description: "error"
+    }
     if(data){      
-        console.log(data)   
       let newData = data.category.data.attributes;
       categoryData = {
         name: newData.name,
         description: newData.description
       }
-      console.log(categoryData)
-      
-      
+     
       newData.posts.data.forEach((entry:Entry)=>{
          let formattedRow = {
              id: entry.id,
@@ -94,8 +94,7 @@ function useFetchCategoryPosts (id:number) {
             article: entry.attributes.article
          }
          newDataArray.push(formattedRow)
-     })
-     
+     }) 
   }
      data = newDataArray;
  
