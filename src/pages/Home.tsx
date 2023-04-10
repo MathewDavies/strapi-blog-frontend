@@ -39,7 +39,8 @@ function Home() {
         <div key={post.id} className="post-card">
           <h2>{post.title}</h2>
           <div className="cover-image-container">
-          <img className="cover-image" src={"http://localhost:1337" + post.image} alt="" />
+          {/* <img className="cover-image" src={"http://localhost:1337" + post.image} alt="" /> */}
+          <img className="cover-image" src={"https://strapi-119331-0.cloudclusters.net" + post.image} alt="" />
           </div>
           
           <ReactMarkdown>{post.excerpt}</ReactMarkdown>

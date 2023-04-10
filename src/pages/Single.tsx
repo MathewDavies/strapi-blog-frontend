@@ -14,7 +14,8 @@ function Single() {
         <div className="review-card">
           <h2>{data.title}</h2> 
           <div className="cover-image-container">
-            <img className="cover-image" src={"http://localhost:1337" + data.image} alt="" />
+            {/* <img className="cover-image" src={"http://localhost:1337" + data.image} alt="" /> */}
+            <img className="cover-image" src={"https://strapi-119331-0.cloudclusters.net" + data.image} alt="" />
           </div>      
           <ReactMarkdown>{data.article}</ReactMarkdown>
         </div>   

@@ -7,8 +7,7 @@ import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
 
 const client = new ApolloClient({
   // uri: 'http://localhost:1337/graphql', 
-uri: 'https://strapi-119331-0.cloudclusters.net/', //need to install graph ql on command line
-
+uri: 'https://strapi-119331-0.cloudclusters.net/graphql', //need to install graph ql on command line
   cache: new InMemoryCache()
 });
 
