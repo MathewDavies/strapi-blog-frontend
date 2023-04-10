@@ -6,9 +6,9 @@ import Categories from './pages/Categories';
 import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
 
 const client = new ApolloClient({
-  uri: 'http://localhost:1337/graphql', 
-  //uri: 'https://strapi-119331-0.cloudclusters.net/', //need to install graph ql on command line
-// https://www.youtube.com/watch?v=oMS26wLsrqc - video for importing the data
+  // uri: 'http://localhost:1337/graphql', 
+uri: 'https://strapi-119331-0.cloudclusters.net/', //need to install graph ql on command line
+
   cache: new InMemoryCache()
 });
 
